@@ -1,0 +1,135 @@
+.root {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.inputWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 12px;
+  border: 1px solid var(--calendar-border, #d1d5db);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  color: var(--calendar-text, #111827);
+  background-color: var(--calendar-bg, #ffffff);
+}
+
+.inputWithIconLtr {
+  padding-right: 36px;
+}
+
+.inputWithIconRtl {
+  padding-left: 36px;
+}
+
+.inputInteractive {
+  cursor: pointer;
+}
+
+.inputInteractive:hover:not(:disabled) {
+  border-color: var(--calendar-accent-border, #94cdef);
+  background-color: var(--calendar-hover, #f3f4f6);
+}
+
+.inputDisabled {
+  background-color: var(--calendar-disabled-bg, #f3f4f6);
+  color: var(--calendar-disabled-text, #9ca3af);
+  cursor: not-allowed;
+}
+
+.inputReadOnly {
+  cursor: default;
+}
+
+.iconButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--calendar-icon, #4b5563);
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.iconButton:hover:not(:disabled) {
+  color: var(--calendar-text, #111827);
+  background-color: var(--calendar-hover, #f3f4f6);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--calendar-selected-bg, #2563eb);
+  outline-offset: 1px;
+}
+
+.iconButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.iconButtonLtr {
+  right: 2px;
+}
+
+.iconButtonRtl {
+  left: 2px;
+}
+
+.iconButton svg {
+  display: block;
+}
+
+.clearButton {
+  flex-shrink: 0;
+  padding: 0 10px;
+  border: 1px solid var(--calendar-border, #d1d5db);
+  border-radius: 4px;
+  background-color: var(--calendar-bg, #ffffff);
+  color: var(--calendar-muted, #6b7280);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.clearButton:hover:not(:disabled) {
+  background-color: var(--calendar-hover, #f3f4f6);
+  color: var(--calendar-text, #111827);
+}
+
+.clearButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.popover {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 100;
+  padding: 16px;
+  background-color: var(--calendar-bg, #ffffff);
+  color: var(--calendar-text, #111827);
+  border: 1px solid var(--calendar-border, #d1d5db);
+  border-radius: 8px;
+  box-shadow: var(--calendar-shadow, 0 4px 12px rgba(0, 0, 0, 0.15));
+}

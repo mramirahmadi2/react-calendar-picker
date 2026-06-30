@@ -1,0 +1,149 @@
+.demo {
+  padding: 32px 24px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.demoHero {
+  margin-bottom: 28px;
+}
+
+.demoHero h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.demoSubtitle {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.demoToolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+}
+
+.demoToolbarGroup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.demoToolbarLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-right: 4px;
+}
+
+.demoBtn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--calendar-selected-bg, #2563eb);
+  background: var(--calendar-bg, #ffffff);
+  color: var(--calendar-selected-bg, #2563eb);
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.demoBtn:hover {
+  background: var(--calendar-hover, #f3f4f6);
+}
+
+.demoBtnActive {
+  background: var(--calendar-selected-bg, #2563eb);
+  color: var(--calendar-selected-text, #ffffff);
+}
+
+.demoSection {
+  margin-bottom: 40px;
+}
+
+.demoGroupTitle {
+  margin: 0 0 16px;
+  font-size: 1.125rem;
+}
+
+.demoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.demoGridNarrow {
+  max-width: 360px;
+}
+
+.demoCard {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+}
+
+.demoCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.demoCardHeader h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.demoBadge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 999px;
+  background: var(--calendar-surface, #f9fafb);
+  color: var(--calendar-muted, #6b7280);
+  border: 1px solid var(--calendar-border, #d1d5db);
+}
+
+.demoSelected {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+.demoHint {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.demoFooter {
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--text);
+}
+
+.hostThemeOverride {
+  --calendar-selected-bg: #7c3aed;
+  --calendar-selected-text: #ffffff;
+  --calendar-accent-border: #c4b5fd;
+  --calendar-today-bg: #ddd6fe;
+  --calendar-today-text: #111827;
+}

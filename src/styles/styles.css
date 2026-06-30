@@ -1,0 +1,37 @@
+/**
+ * Default theme for Calendar and DatePicker.
+ *
+ * Import in consumer apps (future package path):
+ *   import "react-calendar-picker/styles.css";
+ *
+ * Or import this file directly during development:
+ *   import "./styles/styles.css";
+ *
+ * Override tokens on any ancestor — variables inherit to components:
+ *
+ *   .myAppTheme {
+ *     --calendar-selected-bg: #7c3aed;
+ *     --calendar-selected-text: #ffffff;
+ *   }
+ *
+ * Available tokens:
+ *   --calendar-bg
+ *   --calendar-text
+ *   --calendar-muted
+ *   --calendar-border
+ *   --calendar-surface
+ *   --calendar-hover
+ *   --calendar-accent-border
+ *   --calendar-today-bg
+ *   --calendar-today-text
+ *   --calendar-selected-bg
+ *   --calendar-selected-text
+ *   --calendar-shadow
+ *   --calendar-icon
+ *   --calendar-disabled-bg
+ *   --calendar-disabled-text
+ *
+ * Light/dark presets: set data-theme on <html> or any ancestor:
+ *   data-theme="light" | data-theme="dark"
+ */
+@import "./calendar-theme.css";

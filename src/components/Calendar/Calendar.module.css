@@ -1,0 +1,173 @@
+.root {
+  width: 280px;
+  font-family: sans-serif;
+  color: var(--calendar-text, #111827);
+  background: var(--calendar-bg, #ffffff);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.navButton {
+  border: none;
+  background: transparent;
+  color: var(--calendar-text, #111827);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.navButton:hover {
+  background: var(--calendar-hover, #f3f4f6);
+}
+
+.headerTitle {
+  font-weight: 600;
+  color: var(--calendar-text, #111827);
+}
+
+.headerMonth {
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.headerYear {
+  cursor: pointer;
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--calendar-muted, #6b7280);
+}
+
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dayEmpty {
+  height: 34px;
+}
+
+.dayButton {
+  height: 34px;
+  border: 1px solid var(--calendar-accent-border, #94cdef);
+  background: var(--calendar-bg, #ffffff);
+  color: var(--calendar-text, #111827);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dayButton:hover:not(.dayButtonSelected) {
+  background: var(--calendar-hover, #f3f4f6);
+}
+
+.dayButtonToday {
+  background: var(--calendar-today-bg, #7ec4f6);
+  color: var(--calendar-today-text, #111827);
+}
+
+.dayButtonSelected {
+  background: var(--calendar-selected-bg, #2563eb);
+  color: var(--calendar-selected-text, #ffffff);
+  border-color: var(--calendar-selected-bg, #2563eb);
+}
+
+.pickerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.yearGrid {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.pickerButton {
+  padding: 10px;
+  border: 1px solid var(--calendar-accent-border, #94cdef);
+  border-radius: 6px;
+  background: var(--calendar-bg, #ffffff);
+  color: var(--calendar-text, #111827);
+  cursor: pointer;
+}
+
+.pickerButton:hover:not(.pickerButtonActive) {
+  background: var(--calendar-hover, #f3f4f6);
+}
+
+.pickerButtonActive {
+  background: var(--calendar-selected-bg, #2563eb);
+  color: var(--calendar-selected-text, #ffffff);
+  border-color: var(--calendar-selected-bg, #2563eb);
+}
+
+.todayButton {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px 0;
+  background: var(--calendar-selected-bg, #2563eb);
+  color: var(--calendar-selected-text, #ffffff);
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todayButton:hover {
+  filter: brightness(1.05);
+}
+
+.timeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.timeSelect {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--calendar-border, #d1d5db);
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--calendar-text, #111827);
+  background-color: var(--calendar-bg, #ffffff);
+  cursor: pointer;
+  appearance: auto;
+}
+
+.timeSelect:hover {
+  background-color: var(--calendar-hover, #f3f4f6);
+  border-color: var(--calendar-accent-border, #94cdef);
+}
+
+.timeSelect:focus {
+  outline: 2px solid var(--calendar-selected-bg, #2563eb);
+  outline-offset: 1px;
+  border-color: var(--calendar-selected-bg, #2563eb);
+}
+
+.timeSelect option {
+  color: var(--calendar-text, #111827);
+  background-color: var(--calendar-bg, #ffffff);
+}
+
+.timeSeparator {
+  color: var(--calendar-muted, #6b7280);
+  font-weight: 600;
+}
