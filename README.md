@@ -34,7 +34,7 @@ Coming soon:
 - Dark mode Jalali DatePicker with time
 - External theme override
 
-Screenshots will be added under `docs/images/` before the GitHub/LinkedIn release. No image files are committed yet.
+Screenshots will be added under `docs/images/` before the LinkedIn release.
 
 ## Installation / local setup
 
@@ -275,7 +275,7 @@ document.documentElement.setAttribute("data-theme", "dark");
 | `className` | `string` | — | Root class name |
 | `showTime` | `boolean` | `false` | Show time selectors |
 | `showSeconds` | `boolean` | `false` | Include seconds when `showTime` |
-| `timeStep` | `number` | `1` | Minute step for time dropdown |
+| `timeStep` | `number` | `1` | Step value for minute and second dropdowns |
 
 ## DatePicker props
 
