@@ -28,13 +28,17 @@ Most date pickers are either tied to a specific design system or only support th
 
 ## Demo screenshots
 
-Coming soon:
+### Light mode Calendar
 
-- Light mode Calendar + DatePicker
-- Dark mode Jalali DatePicker with time
-- External theme override
+![Light mode Calendar demo showing Gregorian, Jalali, and Gregorian with time examples](docs/images/light-calendar.png)
 
-Screenshots will be added under `docs/images/` before the LinkedIn release.
+### Dark mode Calendar with time
+
+![Dark mode Calendar demo showing Gregorian, Jalali, and Gregorian with time examples](docs/images/dark-calendar.png)
+
+### Dark mode DatePicker
+
+![Dark mode DatePicker demo showing Gregorian and Jalali date-only and date-time inputs](docs/images/dark-datepicker.png)
 
 ## Installation / local setup
 
