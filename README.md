@@ -41,7 +41,7 @@ Screenshots will be added under `docs/images/` before the GitHub/LinkedIn releas
 This project is **not published to npm**. Use the repository directly:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/react-calendar-picker.git
+git clone https://github.com/mramirahmadi2/react-calendar-picker.git
 cd react-calendar-picker
 npm install
 npm run dev
@@ -347,7 +347,7 @@ From `src/index.ts`:
 
 Before sharing on GitHub and LinkedIn:
 
-- [ ] Replace `YOUR_USERNAME` in `package.json` and `README.md` with your GitHub username or org
+- [x] Replace the GitHub username placeholder in `package.json` and `README.md`
 - [ ] Add screenshots under `docs/images/` and embed them in the Demo screenshots section
 - [ ] Deploy live demo (GitHub Pages, Vercel, or Netlify)
 - [ ] Replace **Live demo: Coming soon** with the deployed URL

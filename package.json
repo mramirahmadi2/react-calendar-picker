@@ -5,6 +5,7 @@
   "description": "Lightweight React + TypeScript calendar and date picker with Gregorian and Jalali support, optional time selection, and CSS-variable theming.",
   "type": "module",
   "license": "MIT",
+  "author": "Mohammadreza Amirahmadi",
   "keywords": [
     "react",
     "typescript",
@@ -19,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/react-calendar-picker.git"
+    "url": "https://github.com/mramirahmadi2/react-calendar-picker.git"
   },
   "exports": {
     ".": "./src/index.ts",
